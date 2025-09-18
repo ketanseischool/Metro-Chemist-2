@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Metro Chemist - Borivali East, Mumbai</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background:#0066cc; color:#fff; padding:20px; text-align:center; }
+    header h1 { margin:0; font-size:2rem; }
+    nav { margin-top:10px; }
+    nav a { color:white; text-decoration:none; margin:0 10px; font-weight:bold; }
+    section { padding:20px; max-width:1000px; margin:auto; }
+    .info-box { background:white; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .info-box h2 { margin-top:0; color:#0066cc; }
+    .contact a { display:inline-block; background:#0066cc; color:white; padding:10px 20px; border-radius:5px; text-decoration:none; margin-top:10px; }
+    footer { background:#333; color:white; text-align:center; padding:15px; margin-top:20px; }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .login-card {
+      width: 320px;
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      text-align: left;
+    }
+    .login-card h3 { margin:0 0 10px 0; color:#0066cc; }
+    .login-card label { display:block; font-size:0.9rem; margin-top:10px; }
+    .login-card input[type="text"],
+    .login-card input[type="password"] {
+      width:100%;
+      padding:10px;
+      margin-top:6px;
+      border:1px solid #ddd;
+      border-radius:6px;
+      box-sizing:border-box;
+    }
+    .login-card button {
+      margin-top:14px;
+      width:100%;
+      padding:10px;
+      border:0;
+      background:#0066cc;
+      color:white;
+      font-weight:bold;
+      border-radius:6px;
+      cursor:pointer;
+    }
+    .login-error { color:#c0392b; font-size:0.9rem; margin-top:8px; display:none; }
+    .site-hidden { filter: blur(2px); pointer-events: none; user-select: none; }
+  </style>
+</head>
+<body>
+  <!-- Login overlay -->
+  <div id="loginOverlay" class="overlay">
+    <div class="login-card">
+      <h3>Sign in to view Metro Chemist</h3>
+
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Enter username (e.g., prachi)" autocomplete="off">
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter password">
+
+      <div id="error" class="login-error">Incorrect password. Please try again.</div>
+
+      <button id="loginBtn">Sign In</button>
+      <div style="margin-top:10px; font-size:0.9rem; color:#666;">
+        Demo password: <strong>metro123</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site content -->
+  <div id="siteContent" class="site-hidden">
+    <header>
+      <h1>Metro Chemist</h1>
+      <p>Borivali East, Mumbai | Trusted Pharmacy & Home Delivery</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about" class="info-box">
+      <h2>About Us</h2>
+      <p>Metro Chemist is your trusted neighborhood pharmacy in Borivali East, Mumbai. We provide all kinds of medicines and ensure excellent customer care with our friendly staff. If any medicine is unavailable, we order it and deliver within a day.</p>
+    </section>
+
+    <section id="services" class="info-box">
+      <h2>Our Services</h2>
+      <ul>
+        <li>All types of medicines available</li>
+        <li>Home delivery service</li>
+        <li>Quick order for unavailable medicines (within 1 day)</li>
+        <li>Helpful and polite staff to assist you</li>
+      </ul>
+    </section>
+
+    <section id="hours" class="info-box">
+      <h2>Opening Hours</h2>
+      <p>Open All Days (Mon – Sun): <strong>8:30 AM to 11:30 PM</strong></p>
+    </section>
+
+    <section id="contact" class="info-box contact">
+      <h2>Contact Us</h2>
+      <p><strong>Address:</strong> Shop no 9, Gokul Mayur Pankh Bldg, Dattapada Phatak, Carter Road No 1, Borivali East, Mumbai, Maharashtra 400066</p>
+      <p><strong>Phone:</strong> <a href="tel:+919137015661">+91 9137015661</a></p>
+      <p><strong>Email:</strong> metrochemist@example.com</p>
+      <a href="https://www.google.com/maps/place/Metro+Chemist/@19.222998,72.7850231,13z/data=!4m10!1m2!2m1!1smetro+medical+near+me!3m6!1s0x3be7b0d4993ff1af:0xde9b7ef4c3adea84!8m2!3d19.222998!4d72.8571209!15sChVtZXRybyBtZWRpY2FsIG5lYXIgbWUiA5ABAVoXIhVtZXRybyBtZWRpY2FsIG5lYXIgbWWSAQhwaGFybWFjeaoBURABKhEiDW1ldHJvIG1lZGljYWwoADIfEAEiG4tN0Rk7dV6HX9qDeF87v4bh8Ejsuq2mh4dlPzIZEAIiFW1ldHJvIG1lZGljYWwgbmVhciBtZeABAA!16s%2Fg%2F11gdkzv_gv?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D">📍 View on Google Maps</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Metro Chemist | All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const PRESET_PASSWORD = "metro123"; 
+      const overlay = document.getElementById("loginOverlay");
+      const site = document.getElementById("siteContent");
+      const loginBtn = document.getElementById("loginBtn");
+      const err = document.getElementById("error");
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+
+      function showSite(username) {
+        overlay.style.display = "none";
+        site.classList.remove("site-hidden");
+        alert(username + ", you're in!");
+      }
+
+      function showError(message) {
+        err.textContent = message;
+        err.style.display = "block";
+        setTimeout(() => { err.style.display = "none"; }, 2000);
+      }
+
+      loginBtn.addEventListener("click", function() {
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        if (!username) { showError("Please enter username."); return; }
+        if (!password) { showError("Please enter password."); return; }
+
+        if (password === PRESET_PASSWORD) {
+          showSite(username);
+        } else {
+          showError("Incorrect password. Please try again.");
+        }
+      });
+
+      [usernameInput, passwordInput].forEach(el => {
+        el.addEventListener("keydown", function(e) {
+          if (e.key === "Enter") loginBtn.click();
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
